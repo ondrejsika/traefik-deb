@@ -1,0 +1,8 @@
+Package: traefik
+Version: 1.7.9
+Architecture: amd64
+Maintainer: Ondrej Sika <ondrej@ondrejsika.com>
+Depends:
+Priority: extra
+Description: Traefik Proxy
+

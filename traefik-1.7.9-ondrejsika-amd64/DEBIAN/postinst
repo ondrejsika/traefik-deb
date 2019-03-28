@@ -1,0 +1,24 @@
+#!/bin/sh
+
+setcap 'cap_net_bind_service=+ep' /usr/bin/traefik
+
+groupadd -g 321 traefik
+useradd \
+  -g traefik --no-user-group \
+  --home-dir /var/www --no-create-home \
+  --shell /usr/sbin/nologin \
+  --system --uid 321 traefik
+
+usermod -aG docker traefik
+
+mkdir -p /etc/traefik
+mkdir -p /etc/traefik/acme
+chown -R root:root /etc/traefik
+chown -R traefik:traefik /etc/traefik/acme
+
+systemctl daemon-reload
+
+echo
+echo sudo systemctl enable traefik.service
+echo sudo systemctl start traefik.service
+echo
