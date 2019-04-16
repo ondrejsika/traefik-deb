@@ -14,5 +14,5 @@ Debian packages of Traefik proxy.
 ## Install
 
 ```
-sudo dpkg -i traefik-1.7.9-ondrejsika-amd64.deb
+sudo dpkg -i traefik-1.7.10-ondrejsika-amd64.deb
 ```

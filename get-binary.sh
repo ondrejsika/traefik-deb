@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=1.7.9
+VERSION=1.7.10
 
 wget https://github.com/containous/traefik/releases/download/v$VERSION/traefik_linux-amd64
 mkdir -p traefik-$VERSION-ondrejsika-amd64/usr/bin

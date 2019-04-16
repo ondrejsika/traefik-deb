@@ -1,5 +1,5 @@
 Package: traefik
-Version: 1.7.9
+Version: 1.7.10
 Architecture: amd64
 Maintainer: Ondrej Sika <ondrej@ondrejsika.com>
 Depends:
